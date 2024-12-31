@@ -1,0 +1,39 @@
+{
+  "os":  "Linux-6.8.0-48-generic-x86_64-with-glibc2.35",
+  "python":  "3.10.12",
+  "startedAt":  "2024-11-06T01:18:32.147357Z",
+  "program":  "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py",
+  "codePath":  "train_diffusion_policy.py",
+  "email":  "kaustabp@andrew.cmu.edu",
+  "root":  "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code",
+  "host":  "kaust-ROG-Strix-G713RC-G713RC",
+  "username":  "kaust",
+  "executable":  "/home/kaust/anaconda3/envs/drl/bin/python",
+  "codePathLocal":  "train_diffusion_policy.py",
+  "cpu_count":  8,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "502392610816",
+      "used":  "269610926080"
+    }
+  },
+  "memory":  {
+    "total":  "32868970496"
+  },
+  "cpu":  {
+    "count":  8,
+    "countLogical":  16
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "memoryTotal":  "4294967296",
+      "cudaCores":  2048,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.4"
+}

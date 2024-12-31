@@ -1,0 +1,31 @@
+  0%|                                                                                         | 0/50000 [00:00<?, ?it/s]/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/nn/functional.py:4999: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+Training Iteration 0: loss = 2.9045498371124268
+  9%|██████▉                                                                     | 4579/50000 [06:16<1:02:14, 12.16it/s]
+Training Iteration 256: loss = 0.31755685806274414
+Training Iteration 512: loss = 0.2231174260377884
+Training Iteration 768: loss = 0.15656571090221405
+Training Iteration 1024: loss = 0.13843245804309845
+Training Iteration 1280: loss = 0.1265602558851242
+Training Iteration 1536: loss = 0.13181473314762115
+Training Iteration 1792: loss = 0.11317068338394165
+Training Iteration 2048: loss = 0.10375776886940002
+Training Iteration 2304: loss = 0.10104247182607651
+Training Iteration 2560: loss = 0.09386599063873291
+Training Iteration 2816: loss = 0.10622841119766235
+Training Iteration 3072: loss = 0.10669880360364914
+Training Iteration 3328: loss = 0.10867146402597427
+Training Iteration 3584: loss = 0.08788742870092392
+Training Iteration 3840: loss = 0.07433473318815231
+Training Iteration 4096: loss = 0.07796681672334671
+Training Iteration 4352: loss = 0.09022080898284912
+Traceback (most recent call last):
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 637, in <module>
+    run_training()
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 607, in run_training
+    losses=T.train(num_training_steps=50000, batch_size=256, print_every=256, save_every=50000, wandb_logging=True)
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 395, in train
+    loss = self.training_step(batch_size)
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 460, in training_step
+    noisy_actions = self.training_scheduler.add_noise(actions, epsilon, t)
+KeyboardInterrupt

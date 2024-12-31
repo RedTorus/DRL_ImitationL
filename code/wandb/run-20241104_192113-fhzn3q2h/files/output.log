@@ -1,0 +1,29 @@
+  0%|                                                                                         | 0/50000 [00:00<?, ?it/s]/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/nn/functional.py:4999: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+Training Iteration 0: loss = 3.3054890632629395
+  1%|▌                                                                              | 380/50000 [00:07<15:28, 53.42it/s]
+Training Iteration 256: loss = 0.3300855755805969
+Traceback (most recent call last):
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 444, in <module>
+    run_training()
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 440, in run_training
+    losses=T.train(num_training_steps=50000, batch_size=256, print_every=256, save_every=50000, wandb_logging=True)
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 228, in train
+    loss = self.training_step(batch_size)
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 313, in training_step
+    self.optimizer.step()
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/optim/adamw.py", line 171, in step
+    adamw(
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/optim/adamw.py", line 321, in adamw
+    func(
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/optim/adamw.py", line 477, in _multi_tensor_adamw
+    grouped_tensors = _group_tensors_by_device_and_dtype([
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/utils/_foreach_utils.py", line 30, in _group_tensors_by_device_and_dtype
+    for j in range(len(tensorlistlist)):
+KeyboardInterrupt

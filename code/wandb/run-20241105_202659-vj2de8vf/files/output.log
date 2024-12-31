@@ -1,0 +1,28 @@
+  0%|                                                                                                                                    | 0/50000 [00:00<?, ?it/s]/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/nn/functional.py:4999: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+Training Iteration 0: loss = 2.7389376163482666
+  2%|██▉                                                                                                                      | 1202/50000 [01:13<49:48, 16.33it/s]
+Training Iteration 256: loss = 0.2917329668998718
+Training Iteration 512: loss = 0.2007804960012436
+Training Iteration 768: loss = 0.19662261009216309
+Training Iteration 1024: loss = 0.14761635661125183
+Traceback (most recent call last):
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 637, in <module>
+    run_training()
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 607, in run_training
+    losses=T.train(num_training_steps=50000, batch_size=256, print_every=256, save_every=50000, wandb_logging=True)
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 395, in train
+    loss = self.training_step(batch_size)
+  File "/home/kaust/Downloads/F24_703_HW3/F24_703_HW3/code/train_diffusion_policy.py", line 480, in training_step
+    self.optimizer.step()
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/optim/adamw.py", line 171, in step
+    adamw(
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/optim/adamw.py", line 321, in adamw
+    func(
+  File "/home/kaust/anaconda3/envs/drl/lib/python3.10/site-packages/torch/optim/adamw.py", line 442, in _single_tensor_adamw
+    param.addcdiv_(exp_avg, denom, value=-step_size)
+KeyboardInterrupt
